@@ -1,0 +1,2229 @@
+INFO - 2024-12-12 06:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-12 06:45:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 06:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 06:50:08 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'medfinder', 3306, '', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(5, 0)
+#6 D:\xampp\htdocs\MedFinder\app\Controllers\Home.php(23): CodeIgniter\BaseModel->findAll(5)
+#7 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\MedFinder\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\MedFinder\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(5, 0)
+#5 D:\xampp\htdocs\MedFinder\app\Controllers\Home.php(23): CodeIgniter\BaseModel->findAll(5)
+#6 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#7 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-12 06:50:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `drugs`
+WHERE `is_featured` = :is_featured:
+ LIMIT 5', [...], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(5, 0)
+ 5 APPPATH\Controllers\Home.php(23): CodeIgniter\BaseModel->findAll(5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 06:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-12 06:50:20 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 08:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-12 08:08:09 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 08:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 08:08:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "search/results.php"
+[Method: GET, Route: search/results]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('search/results.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search/results', [], true)
+ 3 APPPATH\Controllers\Search.php(62): view('search/results', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->results()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 08:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 08:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-12 08:21:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 08:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 08:31:09 --> ErrorException: Undefined variable $selected_category
+[Method: GET, Route: search]
+in APPPATH\Views\search\index.php on line 21.
+ 1 APPPATH\Views\search\index.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selected_category', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php', 21)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search/index', [], true)
+ 5 APPPATH\Controllers\Search.php(36): view('search/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 08:31:24 --> ErrorException: Undefined variable $min_price
+[Method: GET, Route: search]
+in APPPATH\Views\search\index.php on line 25.
+ 1 APPPATH\Views\search\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $min_price', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search/index', [], true)
+ 5 APPPATH\Controllers\Search.php(36): view('search/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 08:39:45 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in D:\xampp\htdocs\MedFinder\system\HTTP\IncomingRequest.php on line 700
+[Method: GET, Route: search]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 258.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(700): CodeIgniter\HTTP\Request->fetchGlobal('get', 'sort', 'price_asc', null)
+ 2 APPPATH\Controllers\Search.php(38): CodeIgniter\HTTP\IncomingRequest->getGet('sort', 'price_asc')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 08:48:23 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in D:\xampp\htdocs\MedFinder\system\HTTP\IncomingRequest.php on line 700
+[Method: GET, Route: search]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 258.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(700): CodeIgniter\HTTP\Request->fetchGlobal('get', 'sort', 'price_asc', null)
+ 2 APPPATH\Controllers\Search.php(38): CodeIgniter\HTTP\IncomingRequest->getGet('sort', 'price_asc')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 08:48:27 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in D:\xampp\htdocs\MedFinder\system\HTTP\IncomingRequest.php on line 700
+[Method: GET, Route: search]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 258.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(700): CodeIgniter\HTTP\Request->fetchGlobal('get', 'sort', 'price_asc', null)
+ 2 APPPATH\Controllers\Search.php(38): CodeIgniter\HTTP\IncomingRequest->getGet('sort', 'price_asc')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 08:48:48 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in D:\xampp\htdocs\MedFinder\system\HTTP\IncomingRequest.php on line 700
+[Method: GET, Route: search]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 258.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(700): CodeIgniter\HTTP\Request->fetchGlobal('get', 'sort', 'price_asc', null)
+ 2 APPPATH\Controllers\Search.php(38): CodeIgniter\HTTP\IncomingRequest->getGet('sort', 'price_asc')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-12 08:51:12 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Search.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-12 08:51:12 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Search.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-12 08:51:12 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Search.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-12 08:51:12 --> [DEPRECATED] Constant FILTER_SANITIZE_STRING is deprecated in APPPATH\Controllers\Search.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 08:51:12 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in D:\xampp\htdocs\MedFinder\system\HTTP\IncomingRequest.php on line 700
+[Method: GET, Route: search]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 258.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(700): CodeIgniter\HTTP\Request->fetchGlobal('get', 'sort', 'price_asc', null)
+ 2 APPPATH\Controllers\Search.php(38): CodeIgniter\HTTP\IncomingRequest->getGet('sort', 'price_asc')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 08:51:47 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in D:\xampp\htdocs\MedFinder\system\HTTP\IncomingRequest.php on line 700
+[Method: GET, Route: search]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 258.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(700): CodeIgniter\HTTP\Request->fetchGlobal('get', 'sort', 'price_asc', null)
+ 2 APPPATH\Controllers\Search.php(38): CodeIgniter\HTTP\IncomingRequest->getGet('sort', 'price_asc')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 09:00:01 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in D:\xampp\htdocs\MedFinder\system\HTTP\IncomingRequest.php on line 700
+[Method: GET, Route: search]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 258.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(700): CodeIgniter\HTTP\Request->fetchGlobal('get', 'sort', 'price_asc', null)
+ 2 APPPATH\Controllers\Search.php(58): CodeIgniter\HTTP\IncomingRequest->getGet('sort', 'price_asc')
+ 3 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 09:00:32 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in D:\xampp\htdocs\MedFinder\system\HTTP\IncomingRequest.php on line 700
+[Method: GET, Route: search]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 258.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(700): CodeIgniter\HTTP\Request->fetchGlobal('get', 'sort', 'price_asc', null)
+ 2 APPPATH\Controllers\Search.php(58): CodeIgniter\HTTP\IncomingRequest->getGet('sort', 'price_asc')
+ 3 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 09:02:04 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in D:\xampp\htdocs\MedFinder\system\HTTP\IncomingRequest.php on line 700
+[Method: GET, Route: search]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 258.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(700): CodeIgniter\HTTP\Request->fetchGlobal('get', 'sort', 'price_asc', null)
+ 2 APPPATH\Controllers\Search.php(58): CodeIgniter\HTTP\IncomingRequest->getGet('sort', 'price_asc')
+ 3 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 09:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 09:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 11:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-12 14:31:37 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 14:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 14:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-12 14:36:54 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 15:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-12 15:22:44 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 15:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 15:43:07 --> mysqli_sql_exception: Duplicate column name 'drug_name' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+#6 D:\xampp\htdocs\MedFinder\app\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Search->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 15:43:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'drug_name'
+[Method: GET, Route: search]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 15:43:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'drug_name'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 15:43:07 --> [Caused by] mysqli_sql_exception: Duplicate column name 'drug_name'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 15:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 15:43:55 --> mysqli_sql_exception: Duplicate column name 'drug_name' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+#6 D:\xampp\htdocs\MedFinder\app\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Search->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 15:43:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'drug_name'
+[Method: GET, Route: search]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 15:43:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'drug_name'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 15:43:55 --> [Caused by] mysqli_sql_exception: Duplicate column name 'drug_name'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-12 15:45:12 --> mysqli_sql_exception: Duplicate column name 'drug_name' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+#6 D:\xampp\htdocs\MedFinder\app\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Search->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 15:45:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'drug_name'
+[Method: GET, Route: search]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 15:45:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'drug_name'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 15:45:12 --> [Caused by] mysqli_sql_exception: Duplicate column name 'drug_name'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-12 15:45:13 --> mysqli_sql_exception: Duplicate column name 'drug_name' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+#6 D:\xampp\htdocs\MedFinder\app\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Search->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 15:45:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'drug_name'
+[Method: GET, Route: search]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 15:45:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'drug_name'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 15:45:13 --> [Caused by] mysqli_sql_exception: Duplicate column name 'drug_name'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= \'5\'
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `pharmacy_drugs`.*, `drugs`.`name` as `drug_name`, `drugs`.`category`, `drugs`.`image_url`, `pharmacies`.`name` as `pharmacy_name`, `pharmacies`.`address`, `pharmacies`.`latitude`, `pharmacies`.`longitude`, `pharmacies`.`delivery_available`, `pharmacies`.`rating`
+FROM `pharmacy_drugs`
+JOIN `drugs` ON `drugs`.`id` = `pharmacy_drugs`.`drug_id`
+JOIN `pharmacies` ON `pharmacies`.`id` = `pharmacy_drugs`.`pharmacy_id`
+WHERE `pharmacy_drugs`.`price` >= :pharmacy_drugs.price:
+GROUP BY `pharmacy_drugs`.`drug_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(126): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 APPPATH\Controllers\Search.php(41): App\Controllers\Search->performSearch()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 15:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-12 15:49:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 15:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-12 15:49:09 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 15:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 15:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:02:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pharmacy/drugs/index.php"
+[Method: GET, Route: pharmacy/drugs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pharmacy/drugs/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy/drugs/index', [], true)
+ 3 APPPATH\Controllers\Pharmacy\Drugs.php(36): view('pharmacy/drugs/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Drugs->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Drugs))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:02:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pharmacy/drugs/index.php"
+[Method: GET, Route: pharmacy/drugs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pharmacy/drugs/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy/drugs/index', [], true)
+ 3 APPPATH\Controllers\Pharmacy\Drugs.php(36): view('pharmacy/drugs/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Drugs->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Drugs))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:03:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/pharmacy_dashboard.php"
+[Method: GET, Route: pharmacy/drugs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/pharmacy_dashboard.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layout/pharmacy_dashboard', [], true)
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/drugs/index', [], true)
+ 4 APPPATH\Controllers\Pharmacy\Drugs.php(36): view('pharmacy_owner/drugs/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Drugs->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Drugs))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:03:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/pharmacy_dashboard.php"
+[Method: GET, Route: pharmacy/drugs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/pharmacy_dashboard.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layout/pharmacy_dashboard', [], true)
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/drugs/index', [], true)
+ 4 APPPATH\Controllers\Pharmacy\Drugs.php(36): view('pharmacy_owner/drugs/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Drugs->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Drugs))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:29:28 --> RuntimeException: Pharmacy ID not found in session.
+[Method: GET, Route: pharmacy/drugs]
+in APPPATH\Controllers\Pharmacy\Drugs.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pharmacy\Drugs->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:29:35 --> RuntimeException: Pharmacy ID not found in session.
+[Method: GET, Route: pharmacy/drugs]
+in APPPATH\Controllers\Pharmacy\Drugs.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pharmacy\Drugs->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:30:02 --> RuntimeException: Pharmacy ID not found in session.
+[Method: GET, Route: pharmacy/drugs]
+in APPPATH\Controllers\Pharmacy\Drugs.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pharmacy\Drugs->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:30:02 --> RuntimeException: Pharmacy ID not found in session.
+[Method: GET, Route: pharmacy/drugs]
+in APPPATH\Controllers\Pharmacy\Drugs.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pharmacy\Drugs->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:31:53 --> RuntimeException: Pharmacy ID not found in session.
+[Method: GET, Route: pharmacy/drugs]
+in APPPATH\Controllers\Pharmacy\Drugs.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pharmacy\Drugs->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:32:10 --> RuntimeException: Pharmacy ID not found in session.
+[Method: GET, Route: pharmacy/drugs]
+in APPPATH\Controllers\Pharmacy\Drugs.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Drugs->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Drugs))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:32:41 --> RuntimeException: Pharmacy ID not found in session.
+[Method: GET, Route: pharmacy/drugs]
+in APPPATH\Controllers\Pharmacy\Drugs.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Drugs->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Drugs))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:33:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pharmacy/drugs/index.php"
+[Method: GET, Route: pharmacy/drugs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pharmacy/drugs/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy/drugs/index', [], true)
+ 3 APPPATH\Controllers\Pharmacy\Drugs.php(39): view('pharmacy/drugs/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Drugs->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Drugs))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:41:14 --> ErrorException: Undefined variable $pharmacy_id
+[Method: GET, Route: pharmacy/drugs/add]
+in APPPATH\Views\pharmacy_owner\drugs\add.php on line 14.
+ 1 APPPATH\Views\pharmacy_owner\drugs\add.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pharmacy_id', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\drugs\\add.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\drugs\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/drugs/add', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Drugs.php(75): view('pharmacy_owner/drugs/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Drugs->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Drugs))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:44:32 --> ErrorException: file_get_contents(D:\xampp\htdocs\MedFinder\writable\debugbar/debugbar_1734021293.948719.json): Failed to open stream: No such file or directory
+[Method: GET, Route: /]
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\xampp\\htdocs\\MedFinder\\writable\\debugbar/debugbar_1734021293.948719.json): Failed to open stream: No such file or directory', 'D:\\xampp\\htdocs\\MedFinder\\system\\Debug\\Toolbar\\Collectors\\History.php', 88)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(88): file_get_contents('D:\\xampp\\htdocs\\MedFinder\\writable\\debugbar/debugbar_1734021293.948719.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(518): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1734021861.275958', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:44:45 --> ErrorException: Undefined array key "customer_name"
+[Method: GET, Route: pharmacy]
+in APPPATH\Views\pharmacy_owner\dashboard.php on line 84.
+ 1 APPPATH\Views\pharmacy_owner\dashboard.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "customer_name"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php', 84)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/dashboard', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(37): view('pharmacy_owner/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:45:04 --> ErrorException: Undefined array key "customer_name"
+[Method: GET, Route: pharmacy]
+in APPPATH\Views\pharmacy_owner\dashboard.php on line 84.
+ 1 APPPATH\Views\pharmacy_owner\dashboard.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "customer_name"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php', 84)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/dashboard', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(37): view('pharmacy_owner/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 16:46:55 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: pharmacy]
+in APPPATH\Views\pharmacy_owner\dashboard.php on line 84.
+ 1 APPPATH\Views\pharmacy_owner\dashboard.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php', 84)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/dashboard', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(37): view('pharmacy_owner/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 16:49:32 --> mysqli_sql_exception: Unknown column 'users.phone' in 'field list' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\MedFinder\app\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 16:49:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+[Method: GET, Route: pharmacy/orders/view/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:49:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:49:32 --> [Caused by] mysqli_sql_exception: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 16:55:38 --> mysqli_sql_exception: Unknown column 'is_available' in 'where clause' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\app\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+#6 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+#7 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-12 16:55:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'is_available' in 'where clause'
+[Method: GET, Route: pharmacy/orders/assign-delivery/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = :is_available:', [...], false)
+ 2 APPPATH\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:55:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'is_available' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = :is_available:', [...], false)
+ 4 APPPATH\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:55:38 --> [Caused by] mysqli_sql_exception: Unknown column 'is_available' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = :is_available:', [...], false)
+ 5 APPPATH\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 16:55:55 --> mysqli_sql_exception: Unknown column 'users.phone' in 'field list' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\MedFinder\app\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 16:55:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+[Method: GET, Route: pharmacy/orders/view/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:55:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:55:55 --> [Caused by] mysqli_sql_exception: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 16:56:22 --> mysqli_sql_exception: Unknown column 'users.phone' in 'field list' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\MedFinder\app\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 16:56:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+[Method: GET, Route: pharmacy/orders/view/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:56:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:56:22 --> [Caused by] mysqli_sql_exception: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 16:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 16:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 16:57:20 --> mysqli_sql_exception: Unknown column 'is_available' in 'where clause' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\app\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+#6 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+#7 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-12 16:57:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'is_available' in 'where clause'
+[Method: GET, Route: pharmacy/orders/assign-delivery/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = :is_available:', [...], false)
+ 2 APPPATH\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:57:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'is_available' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = :is_available:', [...], false)
+ 4 APPPATH\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 16:57:20 --> [Caused by] mysqli_sql_exception: Unknown column 'is_available' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = :is_available:', [...], false)
+ 5 APPPATH\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 17:01:20 --> mysqli_sql_exception: Unknown column 'is_available' in 'where clause' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\app\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+#6 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+#7 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-12 17:01:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'is_available' in 'where clause'
+[Method: GET, Route: pharmacy/orders/assign-delivery/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = :is_available:', [...], false)
+ 2 APPPATH\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 17:01:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'is_available' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = :is_available:', [...], false)
+ 4 APPPATH\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 17:01:20 --> [Caused by] mysqli_sql_exception: Unknown column 'is_available' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `delivery_partners`
+WHERE `is_available` = :is_available:', [...], false)
+ 5 APPPATH\Models\DeliveryJobModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pharmacy\Orders.php(48): App\Models\DeliveryJobModel->getAvailablePartners()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->assignDelivery('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 17:06:45 --> mysqli_sql_exception: Unknown column 'users.phone' in 'field list' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\MedFinder\app\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 17:06:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+[Method: GET, Route: pharmacy/orders/view/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 17:06:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 17:06:45 --> [Caused by] mysqli_sql_exception: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 17:06:49 --> mysqli_sql_exception: Unknown column 'users.phone' in 'field list' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\MedFinder\app\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 17:06:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+[Method: GET, Route: pharmacy/orders/view/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 17:06:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 17:06:49 --> [Caused by] mysqli_sql_exception: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-12 17:06:58 --> mysqli_sql_exception: Unknown column 'users.phone' in 'field list' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\MedFinder\app\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-12 17:06:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+[Method: GET, Route: pharmacy/orders/view/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 17:06:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-12 17:06:58 --> [Caused by] mysqli_sql_exception: Unknown column 'users.phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = \'1\'
+AND `orders`.`id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `users`.`username` as `customer_name`, `users`.`email` as `customer_email`, `users`.`phone` as `customer_phone`
+FROM `orders`
+JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `orders`.`pharmacy_id` = :orders.pharmacy_id:
+AND `orders`.`id` = :orders.id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\OrderModel.php(34): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Pharmacy\Orders.php(30): App\Models\OrderModel->getPharmacyOrder('1', '1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 17:08:54 --> ErrorException: Undefined variable $order_items
+[Method: GET, Route: pharmacy/orders/view/1]
+in APPPATH\Views\pharmacy_owner\orders\view.php on line 40.
+ 1 APPPATH\Views\pharmacy_owner\orders\view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_items', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/orders/view', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(31): view('pharmacy_owner/orders/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 17:29:52 --> ErrorException: Undefined variable $order_items
+[Method: GET, Route: pharmacy/orders/view/1]
+in APPPATH\Views\pharmacy_owner\orders\view.php on line 40.
+ 1 APPPATH\Views\pharmacy_owner\orders\view.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_items', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/orders/view', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(31): view('pharmacy_owner/orders/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 17:33:57 --> ErrorException: Undefined array key "drug_name"
+[Method: GET, Route: pharmacy/orders/view/1]
+in APPPATH\Views\pharmacy_owner\orders\view.php on line 42.
+ 1 APPPATH\Views\pharmacy_owner\orders\view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "drug_name"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/orders/view', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(41): view('pharmacy_owner/orders/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 17:34:16 --> ErrorException: Undefined array key "drug_name"
+[Method: GET, Route: pharmacy/orders/view/1]
+in APPPATH\Views\pharmacy_owner\orders\view.php on line 42.
+ 1 APPPATH\Views\pharmacy_owner\orders\view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "drug_name"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/orders/view', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(41): view('pharmacy_owner/orders/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 17:34:18 --> ErrorException: Undefined array key "drug_name"
+[Method: GET, Route: pharmacy/orders/view/1]
+in APPPATH\Views\pharmacy_owner\orders\view.php on line 42.
+ 1 APPPATH\Views\pharmacy_owner\orders\view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "drug_name"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/orders/view', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(41): view('pharmacy_owner/orders/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 17:34:25 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: pharmacy/orders/view/1]
+in APPPATH\Views\pharmacy_owner\orders\view.php on line 42.
+ 1 APPPATH\Views\pharmacy_owner\orders\view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\orders\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/orders/view', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Orders.php(41): view('pharmacy_owner/orders/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Orders->view('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-12 17:52:17 --> ErrorException: Undefined property: App\Controllers\PharmacyRegistration::$db
+[Method: POST, Route: pharmacy-registration/register]
+in APPPATH\Controllers\PharmacyRegistration.php on line 37.
+ 1 APPPATH\Controllers\PharmacyRegistration.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PharmacyRegistration::$db', 'D:\\xampp\\htdocs\\MedFinder\\app\\Controllers\\PharmacyRegistration.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PharmacyRegistration->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PharmacyRegistration))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-12 17:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 17:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 19:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 19:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 19:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 19:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 19:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-12 19:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

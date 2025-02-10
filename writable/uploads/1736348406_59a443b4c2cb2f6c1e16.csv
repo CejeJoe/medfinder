@@ -1,0 +1,32 @@
+Name,Category,Description,Price,Image URL,Status,Is Featured,Expiry Date,Is Approved,Dosage,Form,Side Effects,Contraindications,Generic Name,Prescription Required,Manufacturer
+Paracetamol,Pain Relief,For fever and mild pain,1000,http://example.com/paracetamol.jpg,Active,0,31/12/2025,1,500mg,Tablet,Nausea,Liver disease,Acetaminophen,0,Generic Pharma
+Ibuprofen,Pain Relief,For pain and inflammation,1500,http://example.com/ibuprofen.jpg,Active,0,31/12/2025,1,400mg,Tablet,Dizziness,Stomach ulcers,Ibuprofen,0,Pharma Co.
+Amoxicillin,Antibiotics,For bacterial infections,5000,http://example.com/amoxicillin.jpg,Active,0,30/06/2026,1,500mg,Capsule,"Diarrhea, Rash",Liver disease,Amoxicillin,1,Generic Pharma
+Diclofenac,Pain Relief,For pain and inflammation,1200,http://example.com/diclofenac.jpg,Active,0,30/06/2026,1,50mg,Tablet,"Nausea, Headache",Kidney problems,Diclofenac,0,Pharma Co.
+Azithromycin,Antibiotics,For respiratory and skin infections,2500,http://example.com/azithromycin.jpg,Active,0,31/12/2025,1,250mg,Tablet,"Nausea, Vomiting",Liver problems,Azithromycin,1,Meds Pharma
+Ciprofloxacin,Antibiotics,For bacterial infections,1800,http://example.com/ciprofloxacin.jpg,Active,0,31/12/2025,1,500mg,Tablet,"Diarrhea, Dizziness","Pregnancy, Breastfeeding",Ciprofloxacin,1,Meds Pharma
+Metformin,Diabetes Care,For managing Type 2 diabetes,4000,http://example.com/metformin.jpg,Active,0,30/06/2026,1,500mg,Tablet,"Nausea, Diarrhea",Renal problems,Metformin,1,Pharma Co.
+Losartan,Blood Pressure,For high blood pressure,3500,http://example.com/losartan.jpg,Active,0,31/12/2025,1,50mg,Tablet,"Dizziness, Cough",Pregnancy,Losartan,1,Meds Pharma
+Omeprazole,Digestive,For acid reflux and ulcers,2000,http://example.com/omeprazole.jpg,Active,0,31/12/2025,1,20mg,Capsule,"Headache, Nausea",Liver disease,Omeprazole,1,Pharma Co.
+Clindamycin,Antibiotics,For bacterial infections,3000,http://example.com/clindamycin.jpg,Active,1,31/12/2025,1,150mg,Capsule,"Diarrhea, Rash",Pregnancy,Clindamycin,1,Meds Pharma
+Furosemide,Diuretics,For fluid retention,1500,http://example.com/furosemide.jpg,Active,1,31/12/2025,1,40mg,Tablet,"Dizziness, Cramps",Kidney problems,Furosemide,1,Pharma Co.
+Metoprolol,Blood Pressure,For high blood pressure,2200,http://example.com/metoprolol.jpg,Active,1,31/12/2025,1,50mg,Tablet,"Fatigue, Dizziness","Asthma, Bradycardia",Metoprolol,1,Generic Pharma
+Paracetamol,Pain Relief,For fever and mild pain,900,http://example.com/paracetamol2.jpg,Active,1,31/12/2025,1,500mg,Tablet,Nausea,Liver disease,Acetaminophen,0,Generic Pharma
+Ibuprofen,Pain Relief,For pain and inflammation,1600,http://example.com/ibuprofen2.jpg,Active,0,30/12/2025,1,200mg,Tablet,Stomach upset,Kidney problems,Ibuprofen,0,Pharma Co.
+Loratadine,Antihistamine,For allergies and hay fever,1500,http://example.com/loratadine.jpg,Active,0,31/12/2026,1,10mg,Tablet,"Drowsiness, Dry mouth",Liver problems,Loratadine,0,Meds Pharma
+Methylprednisolone,Steroids,For inflammation and allergic reactions,5500,http://example.com/methylprednisolone.jpg,Active,0,31/12/2025,1,4mg,Tablet,"Weight gain, Acne",Fungal infections,Methylprednisolone,1,Pharma Co.
+Warfarin,Blood Thinner,For preventing blood clots,3500,http://example.com/warfarin.jpg,Active,0,31/12/2025,1,5mg,Tablet,"Bleeding, Bruising","Pregnancy, Hemophilia",Warfarin,1,Meds Pharma
+Tamsulosin,Urinary Health,For benign prostate hyperplasia,2500,http://example.com/tamsulosin.jpg,Active,0,31/12/2025,1,0.4mg,Capsule,"Dizziness, Headache",Hypotension,Tamsulosin,1,Pharma Co.
+Levothyroxine,Thyroid Health,For hypothyroidism,4000,http://example.com/levothyroxine.jpg,Active,1,31/12/2025,1,50mcg,Tablet,"Weight loss, Fatigue",Heart disease,Levothyroxine,1,Meds Pharma
+Aspirin,Pain Relief,"For pain, fever, and anti-inflammatory",1200,http://example.com/aspirin.jpg,Active,1,30/12/2025,1,100mg,Tablet,Stomach upset,Gastric ulcers,Acetylsalicylic acid,0,Generic Pharma
+Sildenafil,Erectile Dysfunction,For erectile dysfunction,2500,http://example.com/sildenafil.jpg,Active,1,30/06/2026,1,50mg,Tablet,"Headache, Dizziness","Heart disease, Stroke",Sildenafil,1,Meds Pharma
+Ranitidine,Digestive,For acid reflux and ulcers,1800,http://example.com/ranitidine.jpg,Active,1,31/12/2025,1,150mg,Tablet,"Dizziness, Nausea",Liver disease,Ranitidine,1,Pharma Co.
+Clonazepam,Anxiety,For anxiety and panic disorders,3000,http://example.com/clonazepam.jpg,Active,0,30/06/2026,1,1mg,Tablet,"Drowsiness, Dizziness",Alcohol use,Clonazepam,1,Meds Pharma
+Simvastatin,Cholesterol,For lowering cholesterol,3500,http://example.com/simvastatin.jpg,Active,0,31/12/2025,1,20mg,Tablet,"Muscle pain, Cramps",Liver disease,Simvastatin,1,Generic Pharma
+Pregabalin,Neurological,For neuropathic pain and seizures,5000,http://example.com/pregabalin.jpg,Active,0,30/06/2026,1,75mg,Capsule,"Drowsiness, Dizziness",Heart failure,Pregabalin,1,Meds Pharma
+Hydrochlorothiazide,Diuretics,For fluid retention and high blood pressure,1200,http://example.com/hctz.jpg,Active,1,30/12/2025,1,25mg,Tablet,"Dizziness, Nausea",Kidney problems,Hydrochlorothiazide,1,Pharma Co.
+Doxycycline,Antibiotics,For bacterial infections,2500,http://example.com/doxycycline.jpg,Active,1,31/12/2025,1,100mg,Capsule,"Nausea, Vomiting",Pregnancy,Doxycycline,1,Meds Pharma
+Tetracycline,Antibiotics,For bacterial infections,3000,http://example.com/tetracycline.jpg,Active,1,31/12/2025,1,250mg,Capsule,"Nausea, Rash",Pregnancy,Tetracycline,1,Generic Pharma
+Folic Acid,Vitamins,For folate deficiency,1200,http://example.com/folicacid.jpg,Active,0,31/12/2026,1,5mg,Tablet,No significant effects,No known contraindications,Folic Acid,0,Pharma Co.
+Vitamin C,Vitamins,For immune support and skin health,1500,http://example.com/vitaminc.jpg,Active,0,31/12/2026,1,500mg,Tablet,Stomach upset,No known contraindications,Ascorbic Acid,0,Meds Pharma
+Methotrexate,Cancer Treatment,For cancer and autoimmune diseases,12000,http://example.com/methotrexate.jpg,Active,0,31/12/2026,1,2.5mg,Tablet,"Nausea, Fatigue","Pregnancy, Liver disease",Methotrexate,1,Pharma Co.

@@ -1,0 +1,1538 @@
+INFO - 2024-12-08 04:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 04:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 04:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 04:51:30 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in D:\xampp\htdocs\MedFinder\system\Model.php on line 930
+[Method: GET, Route: search]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1003.
+ 1 SYSTEMPATH\Model.php(930): CodeIgniter\Database\BaseBuilder->like('name', null)
+ 2 APPPATH\Controllers\Search.php(17): CodeIgniter\Model->__call('like', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 04:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 04:53:48 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in D:\xampp\htdocs\MedFinder\system\Model.php on line 930
+[Method: GET, Route: search]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1003.
+ 1 SYSTEMPATH\Model.php(930): CodeIgniter\Database\BaseBuilder->like('name', null)
+ 2 APPPATH\Controllers\Search.php(17): CodeIgniter\Model->__call('like', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 04:53:50 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in D:\xampp\htdocs\MedFinder\system\Model.php on line 930
+[Method: GET, Route: search]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1003.
+ 1 SYSTEMPATH\Model.php(930): CodeIgniter\Database\BaseBuilder->like('name', null)
+ 2 APPPATH\Controllers\Search.php(17): CodeIgniter\Model->__call('like', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 04:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 04:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 04:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 04:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 04:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 05:31:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "search/index.php"
+[Method: GET, Route: search]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('search/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search/index', [], true)
+ 3 APPPATH\Controllers\Search.php(25): view('search/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 05:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 05:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 05:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 05:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 05:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 05:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 05:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 05:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 05:43:58 --> ErrorException: Undefined variable $categories
+[Method: GET, Route: search]
+in APPPATH\Views\search\index.php on line 20.
+ 1 APPPATH\Views\search\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categories', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search/index', [], true)
+ 5 APPPATH\Controllers\Search.php(25): view('search/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 05:46:56 --> ErrorException: Undefined variable $categories
+[Method: GET, Route: search]
+in APPPATH\Views\search\index.php on line 20.
+ 1 APPPATH\Views\search\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categories', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search/index', [], true)
+ 5 APPPATH\Controllers\Search.php(25): view('search/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 05:49:12 --> ErrorException: Undefined variable $categories
+[Method: GET, Route: search]
+in APPPATH\Views\search\index.php on line 20.
+ 1 APPPATH\Views\search\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categories', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\search\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('search/index', [], true)
+ 5 APPPATH\Controllers\Search.php(25): view('search/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 05:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 14:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 15:46:06 --> ErrorException: Undefined array key "price"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php', 135)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:47:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:47:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:47:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 15:47:27 --> ErrorException: Undefined array key "logo_url"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 155.
+ 1 APPPATH\Views\home.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logo_url"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php', 155)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:48:50 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:48:50 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:48:50 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 15:48:50 --> ErrorException: Undefined array key "location"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 158.
+ 1 APPPATH\Views\home.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "location"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php', 158)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:49:20 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:49:20 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:49:20 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 15:49:20 --> ErrorException: Undefined array key "review_count"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 161.
+ 1 APPPATH\Views\home.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "review_count"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php', 161)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:50:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:50:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:50:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 15:50:05 --> ErrorException: Undefined variable $testimonials
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 179.
+ 1 APPPATH\Views\home.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $testimonials', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:55:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:55:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:55:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 15:55:38 --> ErrorException: Undefined variable $testimonials
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 179.
+ 1 APPPATH\Views\home.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $testimonials', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:55:39 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:55:39 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 15:55:39 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 15:55:39 --> ErrorException: Undefined variable $testimonials
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 179.
+ 1 APPPATH\Views\home.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $testimonials', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 15:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 15:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-08 16:00:30 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 16:00:30 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-08 16:00:30 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\home.php on line 135.
+ 1 APPPATH\Views\home.php(135): number_format(null, 2)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 16:00:30 --> ErrorException: Undefined variable $testimonials
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 179.
+ 1 APPPATH\Views\home.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $testimonials', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php', 179)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 16:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 16:33:46 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: pharmacy_owner]
+in APPPATH\Controllers\PharmacyOwner.php on line 44.
+ 1 APPPATH\Controllers\PharmacyOwner.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\MedFinder\\app\\Controllers\\PharmacyOwner.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PharmacyOwner->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PharmacyOwner))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 16:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 16:43:51 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: pharmacy_owner]
+in APPPATH\Controllers\PharmacyOwner.php on line 44.
+ 1 APPPATH\Controllers\PharmacyOwner.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\MedFinder\\app\\Controllers\\PharmacyOwner.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PharmacyOwner->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PharmacyOwner))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 16:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 16:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 17:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:06:56 --> BadMethodCallException: Call to undefined method App\Models\PharmacyModel::getTopPharmacies
+[Method: GET, Route: admin]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin\Dashboard.php(34): CodeIgniter\Model->__call('getTopPharmacies', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:08:33 --> BadMethodCallException: Call to undefined method App\Models\DrugModel::getTopDrugs
+[Method: GET, Route: admin]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin\Dashboard.php(35): CodeIgniter\Model->__call('getTopDrugs', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-08 17:12:54 --> mysqli_sql_exception: Unknown column 'review_count' in 'where clause' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(610): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\xampp\htdocs\MedFinder\app\Models\PharmacyModel.php(52): CodeIgniter\BaseModel->find()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Admin\Dashboard.php(34): App\Models\PharmacyModel->getTopPharmacies(5)
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-08 17:12:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'review_count' in 'where clause'
+[Method: GET, Route: admin]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pharmacies`
+WHERE `review_count` > :review_count:
+ORDER BY `rating` DESC
+ LIMIT 5', [...], false)
+ 2 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\PharmacyModel.php(52): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Admin\Dashboard.php(34): App\Models\PharmacyModel->getTopPharmacies(5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 17:12:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'review_count' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pharmacies`
+WHERE `review_count` > 0
+ORDER BY `rating` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pharmacies`
+WHERE `review_count` > 0
+ORDER BY `rating` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pharmacies`
+WHERE `review_count` > :review_count:
+ORDER BY `rating` DESC
+ LIMIT 5', [...], false)
+ 4 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 6 APPPATH\Models\PharmacyModel.php(52): CodeIgniter\BaseModel->find()
+ 7 APPPATH\Controllers\Admin\Dashboard.php(34): App\Models\PharmacyModel->getTopPharmacies(5)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 17:12:55 --> [Caused by] mysqli_sql_exception: Unknown column 'review_count' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pharmacies`
+WHERE `review_count` > 0
+ORDER BY `rating` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pharmacies`
+WHERE `review_count` > 0
+ORDER BY `rating` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pharmacies`
+WHERE `review_count` > 0
+ORDER BY `rating` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pharmacies`
+WHERE `review_count` > :review_count:
+ORDER BY `rating` DESC
+ LIMIT 5', [...], false)
+ 5 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\PharmacyModel.php(52): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Admin\Dashboard.php(34): App\Models\PharmacyModel->getTopPharmacies(5)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:15:06 --> ErrorException: Undefined variable $totalUsers
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\dashboard.php on line 11.
+ 1 APPPATH\Views\admin\dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(38): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:16:28 --> ErrorException: Undefined variable $totalPharmacies
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\dashboard.php on line 24.
+ 1 APPPATH\Views\admin\dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalPharmacies', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(38): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:16:39 --> ErrorException: Undefined variable $totalOrders
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\dashboard.php on line 37.
+ 1 APPPATH\Views\admin\dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalOrders', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(38): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:16:46 --> ErrorException: Undefined variable $recentOrders
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\dashboard.php on line 82.
+ 1 APPPATH\Views\admin\dashboard.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $recentOrders', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(38): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 17:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 17:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:30:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/drug_management/index.php"
+[Method: GET, Route: admin/drugs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/drug_management/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/drug_management/index', [], true)
+ 3 APPPATH\Controllers\Admin\DrugManagement.php(26): view('admin/drug_management/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\DrugManagement->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DrugManagement))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 17:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:30:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/pharmacy_management/index.php"
+[Method: GET, Route: admin/pharmacies]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pharmacy_management/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/pharmacy_management/index', [], true)
+ 3 APPPATH\Controllers\Admin\PharmacyManagement.php(23): view('admin/pharmacy_management/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\PharmacyManagement->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PharmacyManagement))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:49:55 --> ErrorException: Undefined variable $totalUsers
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\dashboard.php on line 11.
+ 1 APPPATH\Views\admin\dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(38): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 17:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:52:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/pharmacy_management/index.php"
+[Method: GET, Route: admin/pharmacies]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pharmacy_management/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/pharmacy_management/index', [], true)
+ 3 APPPATH\Controllers\Admin\PharmacyManagement.php(23): view('admin/pharmacy_management/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\PharmacyManagement->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PharmacyManagement))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 17:53:13 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: admin/pharmacies]
+in APPPATH\Views\admin\pharmacy_management\index.php on line 42.
+ 1 APPPATH\Views\admin\pharmacy_management\index.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\pharmacy_management\\index.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\admin\\pharmacy_management\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/pharmacy_management/index', [], true)
+ 5 APPPATH\Controllers\Admin\PharmacyManagement.php(23): view('admin/pharmacy_management/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\PharmacyManagement->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PharmacyManagement))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 17:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 17:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 17:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 17:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 17:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:01:44 --> Error: Class "PragmaRX\Google2FA\Google2FA" not found
+[Method: GET, Route: logout]
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:01:53 --> Error: Class "PragmaRX\Google2FA\Google2FA" not found
+[Method: GET, Route: logout]
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:12:11 --> BadMethodCallException: Call to undefined method App\Models\DrugModel::countPharmacyDrugs
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Pharmacy\Dashboard.php(28): CodeIgniter\Model->__call('countPharmacyDrugs', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:16:05 --> BadMethodCallException: Call to undefined method App\Models\OrderModel::countPharmacyOrders
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Pharmacy\Dashboard.php(29): CodeIgniter\Model->__call('countPharmacyOrders', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-08 18:16:48 --> mysqli_sql_exception: Unknown column 'order_items.quantity_sold' in 'field list' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `drugs`....', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `drugs`....')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `drugs`....')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`....', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(610): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\xampp\htdocs\MedFinder\app\Models\DrugModel.php(61): CodeIgniter\BaseModel->find()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(NULL, 5)
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-08 18:16:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'order_items.quantity_sold' in 'field list'
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `order_items` ON `order_items`.`drug_id` = `drugs`.`id`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\DrugModel.php(61): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:16:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'order_items.quantity_sold' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `order_items` ON `order_items`.`drug_id` = `drugs`.`id`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `order_items` ON `order_items`.`drug_id` = `drugs`.`id`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `order_items` ON `order_items`.`drug_id` = `drugs`.`id`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 6 APPPATH\Models\DrugModel.php(61): CodeIgniter\BaseModel->find()
+ 7 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:16:48 --> [Caused by] mysqli_sql_exception: Unknown column 'order_items.quantity_sold' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `order_items` ON `order_items`.`drug_id` = `drugs`.`id`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `order_items` ON `order_items`.`drug_id` = `drugs`.`id`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `order_items` ON `order_items`.`drug_id` = `drugs`.`id`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `order_items` ON `order_items`.`drug_id` = `drugs`.`id`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\DrugModel.php(61): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-08 18:19:51 --> mysqli_sql_exception: Unknown column 'order_items.quantity_sold' in 'field list' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `drugs`....', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `drugs`....')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `drugs`....')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`....', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(610): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\xampp\htdocs\MedFinder\app\Models\DrugModel.php(60): CodeIgniter\BaseModel->find()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(NULL, 5)
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-08 18:19:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'order_items.quantity_sold' in 'field list'
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\DrugModel.php(60): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:19:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'order_items.quantity_sold' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 6 APPPATH\Models\DrugModel.php(60): CodeIgniter\BaseModel->find()
+ 7 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:19:51 --> [Caused by] mysqli_sql_exception: Unknown column 'order_items.quantity_sold' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\DrugModel.php(60): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-08 18:19:53 --> mysqli_sql_exception: Unknown column 'order_items.quantity_sold' in 'field list' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `drugs`....', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `drugs`....')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `drugs`....')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`....', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(610): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\xampp\htdocs\MedFinder\app\Models\DrugModel.php(60): CodeIgniter\BaseModel->find()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(NULL, 5)
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-08 18:19:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'order_items.quantity_sold' in 'field list'
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Models\DrugModel.php(60): CodeIgniter\BaseModel->find()
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:19:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'order_items.quantity_sold' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 6 APPPATH\Models\DrugModel.php(60): CodeIgniter\BaseModel->find()
+ 7 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:19:53 --> [Caused by] mysqli_sql_exception: Unknown column 'order_items.quantity_sold' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `drugs`.*, SUM(order_items.quantity_sold) as total_sales
+FROM `drugs`
+JOIN `orders` ON `orders`.`id` = `order_items`.`order_id`
+WHERE `orders`.`pharmacy_id` IS NULL
+GROUP BY `drugs`.`id`
+ORDER BY `total_sales` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\DrugModel.php(60): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:20:28 --> BadMethodCallException: Call to undefined method App\Models\DrugModel::getTopSellingDrugs
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Pharmacy\Dashboard.php(32): CodeIgniter\Model->__call('getTopSellingDrugs', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-08 18:22:41 --> mysqli_sql_exception: Unknown column 'pharmacy_id' in 'where clause' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\MedFinder\app\Models\DrugModel.php(56): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(NULL, 5)
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-08 18:22:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pharmacy_id' in 'where clause'
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\DrugModel.php(56): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:22:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pharmacy_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\DrugModel.php(56): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:22:41 --> [Caused by] mysqli_sql_exception: Unknown column 'pharmacy_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DrugModel.php(56): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:25:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pharmacy/dashboard.php"
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pharmacy/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy/dashboard', [], true)
+ 3 APPPATH\Controllers\Pharmacy\Dashboard.php(35): view('pharmacy/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-08 18:26:45 --> mysqli_sql_exception: Unknown column 'pharmacy_id' in 'where clause' in D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\MedFinder\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\MedFinder\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\MedFinder\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\MedFinder\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\MedFinder\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\MedFinder\app\Models\DrugModel.php(56): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\MedFinder\app\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(NULL, 5)
+#8 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+#9 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+#10 D:\xampp\htdocs\MedFinder\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MedFinder\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\MedFinder\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\MedFinder\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-08 18:26:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pharmacy_id' in 'where clause'
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\DrugModel.php(56): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:26:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pharmacy_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\DrugModel.php(56): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-08 18:26:45 --> [Caused by] mysqli_sql_exception: Unknown column 'pharmacy_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `drugs`
+WHERE `pharmacy_id` IS NULL
+ORDER BY `total_amount` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DrugModel.php(56): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Pharmacy\Dashboard.php(32): App\Models\DrugModel->getTopSellingDrugs(null, 5)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:27:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pharmacy/dashboard.php"
+[Method: GET, Route: pharmacy_owner]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pharmacy/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy/dashboard', [], true)
+ 3 APPPATH\Controllers\Pharmacy\Dashboard.php(35): view('pharmacy/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:28:33 --> ErrorException: Undefined variable $totalDrugs
+[Method: GET, Route: pharmacy_owner]
+in APPPATH\Views\pharmacy_owner\dashboard.php on line 11.
+ 1 APPPATH\Views\pharmacy_owner\dashboard.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalDrugs', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/dashboard', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(35): view('pharmacy_owner/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:29:02 --> ErrorException: Undefined variable $lowStockCount
+[Method: GET, Route: pharmacy_owner]
+in APPPATH\Views\pharmacy_owner\dashboard.php on line 24.
+ 1 APPPATH\Views\pharmacy_owner\dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lowStockCount', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/dashboard', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(35): view('pharmacy_owner/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:29:34 --> ErrorException: Undefined variable $lowStockCount
+[Method: GET, Route: pharmacy_owner]
+in APPPATH\Views\pharmacy_owner\dashboard.php on line 24.
+ 1 APPPATH\Views\pharmacy_owner\dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lowStockCount', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/dashboard', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(35): view('pharmacy_owner/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:29:52 --> ErrorException: Undefined variable $low_stock_count
+[Method: GET, Route: pharmacy_owner]
+in APPPATH\Views\pharmacy_owner\dashboard.php on line 24.
+ 1 APPPATH\Views\pharmacy_owner\dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $low_stock_count', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/dashboard', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(35): view('pharmacy_owner/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 18:29:54 --> ErrorException: Undefined variable $low_stock_count
+[Method: GET, Route: pharmacy_owner]
+in APPPATH\Views\pharmacy_owner\dashboard.php on line 24.
+ 1 APPPATH\Views\pharmacy_owner\dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $low_stock_count', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/dashboard', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Dashboard.php(35): view('pharmacy_owner/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 18:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 18:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-08 20:23:20 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: pharmacy_owner/profile]
+in APPPATH\Views\pharmacy_owner\profile.php on line 22.
+ 1 APPPATH\Views\pharmacy_owner\profile.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\profile.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\MedFinder\\app\\Views\\pharmacy_owner\\profile.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pharmacy_owner/profile', [], true)
+ 5 APPPATH\Controllers\Pharmacy\Profile.php(42): view('pharmacy_owner/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pharmacy\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pharmacy\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-08 20:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-08 20:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

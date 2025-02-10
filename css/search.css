@@ -1,0 +1,15 @@
+/* Hero Section */
+.search-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+.search-hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* ...other search-specific styles... */

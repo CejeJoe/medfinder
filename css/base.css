@@ -1,0 +1,22 @@
+:root {
+    --primary: #00B4B6;
+    --primary-dark: #009B9E;
+    --secondary: #2C3E50;
+    --accent: #3498DB;
+    --success: #27AE60;
+    --danger: #E74C3C;
+    --warning: #F1C40F;
+    --light-bg: #F8FAFB;
+    --border-color: #E5E9F2;
+    --card-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06);
+    --hover-shadow: 0 4px 8px rgba(0,0,0,0.08), 0 8px 16px rgba(0,0,0,0.08);
+}
+
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--secondary);
+}
+
+/* ...other global styles... */

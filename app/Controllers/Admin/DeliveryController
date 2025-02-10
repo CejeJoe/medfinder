@@ -1,0 +1,71 @@
+<?php
+
+namespace App\Controllers;
+
+use CodeIgniter\Controller;
+use CodeIgniter\API\ResponseTrait;
+use App\Models\OrderModel;
+use App\Models\DeliveryJobModel;
+
+class DeliveryController extends Controller
+{
+    use ResponseTrait;
+
+    protected $orderModel;
+    protected $deliveryJobModel;
+
+    public function __construct()
+    {
+        $this->orderModel = new OrderModel();
+        $this->deliveryJobModel = new DeliveryJobModel();
+    }
+
+    public function trackDelivery($orderId)
+    {
+        $order = $this->orderModel->find($orderId);
+        if (!$order) {
+            return $this->failNotFound('Order not found');
+        }
+
+        $delivery = $this->deliveryJobModel->where('order_id', $orderId)->first();
+        if (!$delivery) {
+            return $this->failNotFound('Delivery not found');
+        }
+
+        return view('delivery/track', [
+            'order' => $order,
+            'delivery' => $delivery
+        ]);
+    }
+
+    public function updateLocation()
+    {
+        $deliveryId = $this->request->getPost('delivery_id');
+        $lat = $this->request->getPost('latitude');
+        $lng = $this->request->getPost('longitude');
+
+        $delivery = $this->deliveryJobModel->find($deliveryId);
+        if (!$delivery) {
+            return $this->failNotFound('Delivery not found');
+        }
+
+        $this->deliveryJobModel->update($deliveryId, [
+            'current_latitude' => $lat,
+            'current_longitude' => $lng,
+            'last_update' => date('Y-m-d H:i:s')
+        ]);
+
+        return $this->respondUpdated(['message' => 'Location updated successfully']);
+    }
+
+    public function getDeliveryStatus($deliveryId)
+    {
+        $delivery = $this->deliveryJobModel->find($deliveryId);
+        if (!$delivery) {
+            return $this->failNotFound('Delivery not found');
+        }
+
+        return $this->respond($delivery);
+    }
+}
+
