@@ -30,7 +30,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="delivery" value="1" id="deliveryCheck">
                     <label class="form-check-label" for="deliveryCheck">
-                        Delivery Available
+                        Deeeeeeeeeeelivery Available
                     </label>
                 </div>
             </div>
